@@ -1,1 +1,1 @@
-hola soy ronaldo
+hola soy ronaldo, estoy aprendiendo git/github
