@@ -12,23 +12,6 @@ Este proyecto es un **laboratorio de práctica** donde aprendo y experimento con
 - Colaboración y pull requests
 - Integración continua
 
-## 📂 Contenido del Proyecto
-
-- `hello.go` - Programa básico en Go con funciones testeables
-- `hello_test.go` - Tests unitarios para el código Go
-- `hello.py` - Script en Python
-- `login.py` - Script de login en Python
-- `index.html` - Página web básica
-- `testing.txt` - Archivo de pruebas y experimentación
-- `conflicto.txt` - Archivo para practicar resolución de conflictos
-
-## 🛠️ Tecnologías
-
-- **Go** - Lenguaje de programación principal
-- **Python** - Scripts y automatización
-- **HTML** - Páginas web básicas
-- **Git & GitHub** - Control de versiones y colaboración
-
 ## 🎯 Objetivos de Aprendizaje
 
 - [x] Configuración inicial de Git
@@ -54,13 +37,6 @@ go test -v
 
 # Ejecutar benchmarks
 go test -bench=.
-```
-
-### Python
-```bash
-# Ejecutar scripts Python
-python hello.py
-python login.py
 ```
 
 ## 📝 Notas de Aprendizaje
