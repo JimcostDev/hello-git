@@ -1,0 +1,32 @@
+# Go
+/bin/
+*.exe
+*.test
+*.out
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.env
+
+# VS Code
+.vscode/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+
+# Archivos de laboratorio
+conflicto.txt
+
+# Otros
+*.pdf

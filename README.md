@@ -22,45 +22,47 @@ Este proyecto es un **laboratorio de práctica** donde aprendo y experimento con
 - [x] Trabajo con ramas (branching)
 - [x] Merge y rebase
 - [x] Resolución de conflictos
-- [ ] GitHub Actions (CI/CD)
-- [ ] Colaboración con pull requests
+- [x] GitHub Actions (CI/CD)
+- [x] Colaboración con pull requests
 
 ## 🏃‍♂️ Cómo ejecutar
 
 ### Go
 ```bash
 # Ejecutar el programa principal
-go run hello.go
+go run main.go
 
-# Ejecutar tests
-go test -v
+# hello-git
 
-# Ejecutar benchmarks
-go test -bench=.
-```
+Laboratorio para aprender y practicar Git y GitHub.
 
-## 📝 Notas de Aprendizaje
+## ¿Qué es esto?
 
-Este repositorio documenta mi progreso aprendiendo Git y GitHub. Cada commit representa un paso en mi proceso de aprendizaje.
+Este repositorio contiene ejemplos y pruebas para experimentar con comandos, flujos y conceptos de Git y GitHub.
 
-### Comandos útiles que he aprendido:
+
+## Cómo usar
+
+Puedes clonar el repo y probar comandos de Git, crear ramas, hacer commits, resolver conflictos y practicar colaboraciones.
+
+## Archivos principales
+
+- Código en Go y Python
+- Documentos y ejemplos
+- Pruebas y experimentos
+
+## Cómo correr las pruebas
+
+### Go
 ```bash
-git status
-git add .
-git commit -m "mensaje descriptivo"
-git push origin main
-git pull
-git log --oneline
+go test -v
 ```
 
-## 🤝 Contribuciones
-
-Este es un proyecto personal de aprendizaje, pero si tienes sugerencias o encuentras formas de mejorar el código, ¡las contribuciones son bienvenidas!
-
-## 📧 Contacto
-
-- GitHub: [@JimcostDev](https://github.com/JimcostDev)
+### Python (desde la carpeta api)
+```bash
+pytest test_main.py
+```
 
 ---
+Autor: JimcostDev
 
-*"La práctica hace al maestro" - Este repo es mi dojo de Git* 🥋
