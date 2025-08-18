@@ -1,0 +1,10 @@
+# Archivos/carpetas que NO deben copiarse dentro de la imagen
+.git
+.gitignore
+README.md
+*.log
+*.md
+*.env
+vendor/
+node_modules/
+__pycache__/

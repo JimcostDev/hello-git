@@ -31,25 +31,13 @@ Este proyecto es un **laboratorio de práctica** donde aprendo y experimento con
 ```bash
 # Ejecutar el programa principal
 go run main.go
+```
 
-# hello-git
-
-Laboratorio para aprender y practicar Git y GitHub.
-
-## ¿Qué es esto?
-
-Este repositorio contiene ejemplos y pruebas para experimentar con comandos, flujos y conceptos de Git y GitHub.
-
-
-## Cómo usar
-
-Puedes clonar el repo y probar comandos de Git, crear ramas, hacer commits, resolver conflictos y practicar colaboraciones.
-
-## Archivos principales
-
-- Código en Go y Python
-- Documentos y ejemplos
-- Pruebas y experimentos
+### FastAPI
+```bash
+# Ejecutar el programa principal
+fastapi dev main.py
+```
 
 ## Cómo correr las pruebas
 
@@ -61,6 +49,59 @@ go test -v
 ### Python (desde la carpeta api)
 ```bash
 pytest test_main.py
+```
+
+---
+## 🛠️ Docker 
+
+### 1. Construir la imagen
+Ejecuta en la terminal, estando en la carpeta donde está el Dockerfile:
+```bash
+docker build -t miapp:local .
+```
+
+📌 `-t miapp-go:local` le da un nombre y etiqueta `(local)` a tu imagen.
+El `.` al final indica que el contexto es el directorio actual. 
+
+### 2. Verificar que la imagen existe
+```bash
+docker images
+```
+
+### 3. Probar el contenedor
+Corre tu imagen y mapea el puerto del contenedor al host:
+```bash
+docker run --rm -p 8080:8080 miapp:local
+```
+* `--rm` → elimina el contenedor cuando termine.
+
+* `-p` 8080:8080 → mapea el puerto 8080 del contenedor al 8080 de tu máquina.
+
+Si tu app escucha en 8080, abre en el navegador:
+👉 http://localhost:8080
+
+### 4. Eliminar una imagen por su ID o nombre:tag
+```bash
+docker rmi abc12345defg
+```
+o
+```bash
+docker rmi miapp:local
+```
+
+### 4. Listar todos los contenedores
+```bash
+docker ps -a
+```
+
+* Eliminar contenedor:
+```bash
+docker rm <container_id_o_nombre>
+```
+
+* Muy útil si quieres borrarlos en bloque:
+```bash
+docker rm $(docker ps -aq)
 ```
 
 ---
