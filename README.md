@@ -17,21 +17,13 @@ Este proyecto es un **laboratorio de práctica** donde aprendo y experimento con
 - [x] Configuración inicial de Git
 - [x] Commits y mensajes descriptivos
 - [x] Manejo de archivos y staging area
-- [x] Creación y conversión de documentos (PDF a Markdown)
-- [x] Testing en Go
 - [x] Trabajo con ramas (branching)
-- [x] Merge y rebase
+- [x] Merge
 - [x] Resolución de conflictos
 - [x] GitHub Actions (CI/CD)
 - [x] Colaboración con pull requests
 
 ## 🏃‍♂️ Cómo ejecutar
-
-### Go
-```bash
-# Ejecutar el programa principal
-go run main.go
-```
 
 ### FastAPI
 ```bash
@@ -41,14 +33,8 @@ fastapi dev main.py
 
 ## Cómo correr las pruebas
 
-### Go
 ```bash
-go test -v
-```
-
-### Python (desde la carpeta api)
-```bash
-pytest test_main.py
+pytest test_main.py -v
 ```
 
 ---

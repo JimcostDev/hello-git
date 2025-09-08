@@ -1,21 +1,20 @@
-# Etapa 1: Construcción
-FROM golang:1.24.1 AS builder
+# Imagen base oficial de Python
+FROM python:3.12-slim
 
+# Directorio de trabajo
 WORKDIR /app
 
-COPY go.mod ./
-RUN go mod download
+# Copia el archivo de dependencias
+COPY requirements.txt .
 
-COPY . ./
-RUN go build -o main .
+# Instala las dependencias de Python
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Etapa 2: Imagen final liviana
-FROM debian:bookworm-slim
+# Copia todo el código de la aplicación
+COPY . .
 
-WORKDIR /app
+# Expone el puerto 8000 (puerto por defecto de FastAPI)
+EXPOSE 8000
 
-COPY --from=builder /app/main .
-
-EXPOSE 8080
-
-CMD ["./main"]
+# Comando de inicio
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

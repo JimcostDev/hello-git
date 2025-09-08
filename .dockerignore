@@ -1,10 +1,32 @@
-# Archivos/carpetas que NO deben copiarse dentro de la imagen
+# Entornos virtuales y caches
+venv
+.env
+.env.*
+core/config.env
+
+# Metadata / VCS
 .git
 .gitignore
-README.md
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+
+# Editor / OS
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+
+# Tests / docs / local
+tests
+docs
+
+# Archivos grandes/locales
+*.sqlite3
 *.log
-*.md
-*.env
-vendor/
-node_modules/
-__pycache__/
+
+# Ignorar imágenes de Docker y compose si existen
+docker-compose.yml
+Dockerfile*
