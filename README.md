@@ -61,10 +61,10 @@ docker run --rm -p 8000:8000 miapp:local
 ```
 * `--rm` → elimina el contenedor cuando termine.
 
-* `-p` 8000:8000 → mapea el puerto 8080 del contenedor al 8080 de tu máquina.
+* `-p` 8000:8000 → mapea el puerto 8000 del contenedor al 8000 de tu máquina.
 
-Si tu app escucha en 8080, abre en el navegador:
-👉 http://localhost:8080
+Si tu app escucha en 8000, abre en el navegador:
+👉 http://localhost:8000
 
 ### 4. Eliminar una imagen por su ID o nombre:tag
 ```bash
