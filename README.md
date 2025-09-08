@@ -57,11 +57,11 @@ docker images
 ### 3. Probar el contenedor
 Corre tu imagen y mapea el puerto del contenedor al host:
 ```bash
-docker run --rm -p 8080:8080 miapp:local
+docker run --rm -p 8000:8000 miapp:local
 ```
 * `--rm` → elimina el contenedor cuando termine.
 
-* `-p` 8080:8080 → mapea el puerto 8080 del contenedor al 8080 de tu máquina.
+* `-p` 8000:8000 → mapea el puerto 8080 del contenedor al 8080 de tu máquina.
 
 Si tu app escucha en 8080, abre en el navegador:
 👉 http://localhost:8080
