@@ -57,8 +57,10 @@ docker images
 ### 3. Probar el contenedor
 Corre tu imagen y mapea el puerto del contenedor al host:
 ```bash
-docker run --rm -p 8000:8000 miapp:local
+docker run --name mi-contenedor-web --rm -p 8000:8000 miapp:local
 ```
+* `--name mi-contenedor-web` → le asigna un nombre específico (mi-contenedor-web) a tu contenedor. Esto hace que sea más fácil de identificar y gestionar en lugar de usar el ID aleatorio que Docker le asignaría por defecto.
+
 * `--rm` → elimina el contenedor cuando termine.
 
 * `-p` 8000:8000 → mapea el puerto 8000 del contenedor al 8000 de tu máquina.
